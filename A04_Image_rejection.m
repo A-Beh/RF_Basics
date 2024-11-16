@@ -48,7 +48,6 @@ Q_shifted = imag(hilbert(Q_signal));  % Ideal 90-degree phase shift
 % Combine I and Q for Image Rejection (Hartley combination)
 % ================
 combined_signal_1 = I_signal + Q_shifted;  % Desired signal (constructive)
-combined_signal_2 = I_signal - Q_shifted;  % Image signal (destructive)
 
 % ================
 % Choose the signal that represents the desired signal after rejection
